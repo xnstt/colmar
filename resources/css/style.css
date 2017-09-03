@@ -1,0 +1,315 @@
+/* Universal Styles*/
+html{
+}
+
+body{
+  font-family: "Arial";
+}
+/* use for mutliple class selection*/
+span[class|="foot"]{
+}
+
+div{
+  border: solid 1px green;}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+/* Header */
+
+header{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+}
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+nav span {
+  padding-right: 16px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  display: flex;
+  width: 100%;
+  background-color: gainsboro;
+  flex-direction: row;
+}
+
+.leftjumbo {
+  width: 60%;
+  margin: 32px 24px;
+  height: auto;
+}
+
+.leftjumbo img {
+  width: 100%;
+}
+
+.rightjumbo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.jumbohead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  height: 50%;
+  margin-left: 24px;
+}
+
+.startbutton {
+  background-color: DimGrey;
+  padding: 8px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.startbutton span{
+  color: white;
+
+}
+
+/* main section */
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.main-left {
+  width: 60%;
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.main .contain-img  {
+  width: 100%;
+  height: auto;
+}
+
+.main .contain-img img {
+  max-width: 100%;
+}
+
+.mainhead{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mainhead h2{
+  padding-bottom: 24px;
+}
+
+.quote{
+  font-size: 0.8rem;
+  padding-top: 32px;
+}
+
+.main-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box .contain-img  {
+  width: 35%;
+  height: auto;
+  margin: 16px 16px;
+}
+
+.box .content  {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box .contain-img img {
+  width: 100%;
+}
+
+.box p {
+  padding-top: 16px;
+}
+
+/* feature section: learning */
+.learning {
+  display: flex;
+  flex-direction: column;
+  background-color: gainsboro;
+}
+
+.feature-head{
+  width: 100%;
+}
+
+.feature-head h2 {
+  margin: 32px 0;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.carousel {
+  margin: 0 72px 32px 72px;
+}
+
+.courses-contain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.course{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 16px 16px;
+  background-color: white;
+}
+
+.course .contain-img {
+  height: auto;
+  width: 100%;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .content {
+  margin: 16px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course .content span {
+  padding: 8px 0px;
+}
+
+/* Thesis exhibition section */
+
+.theses {
+  background-color: white;
+}
+
+.exhibits{
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibits-main{
+  width: 60%;
+}
+
+.video {
+  margin: 0 24px 24px 24px;
+}
+
+.video video {
+  width: 100%;
+}
+
+.exhibits-side{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.exhibit-thesis{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.exhibit-thesis .contain-img {
+  width: 35%;
+  height: auto;
+  margin: 16px 16px;
+}
+
+.exhibit-thesis .content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+}
+
+.exhibit-thesis .content h4 {
+  padding-top: 8px;
+  padding-bottom:8px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.foot-left {
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.foot-right {
+  margin-right: 24px;
+  margin-top: 16px;
+  height: 100px;
+}
+
+.foot-right span{
+  padding-left: 8px;
+}
