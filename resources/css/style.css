@@ -124,7 +124,7 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 40%;
+  width: 40%;
 }
 
 .jumbohead {
