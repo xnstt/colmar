@@ -11,9 +11,9 @@ body{
 span[class|="foot"]{
 }
 
-div{
+/*div{
   border: solid 1px green;
-}
+} */
 
 h1 {
   font-size: 4rem;
@@ -33,6 +33,7 @@ h4 {
 img {
   max-width: 100%;
 }
+
 /* Header */
 
 header{
@@ -206,6 +207,7 @@ nav span {
 }
 
 .mainhead{
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -224,12 +226,23 @@ nav span {
   width: 40%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .box {
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+
+.box:nth-child(3n+3)
+{
+  background-color: gainsboro;
+}
+
+.box .contain-img:first-child {
+  margin-top: 0px;
 }
 
 .box .contain-img  {
@@ -405,10 +418,24 @@ nav span {
 
 .exhibits-main{
   width: 60%;
+  margin-left: 24px;
+}
+
+.exhibits .content {
+  margin-right: 24px;
+}
+
+.exhibits .content h4{
+  padding-bottom: 8px;
+}
+
+.exhibits .content p {
+  padding-bottom: 32px;
 }
 
 .video {
-  margin: 0 24px 24px 24px;
+  margin-bottom: 24px;
+  margin-right: 24px;
 }
 
 .video video {
@@ -426,6 +453,11 @@ nav span {
   flex-direction: row;
   width: 100%;
 }
+
+.exhibit-thesis:first-child{
+  background-color: gainsboro;
+}
+
 
 .exhibit-thesis .contain-img {
   width: 35%;
