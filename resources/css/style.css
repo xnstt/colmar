@@ -1,16 +1,19 @@
 /* Universal Styles*/
-html{
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body{
-  font-family: "Arial";
+
 }
 /* use for mutliple class selection*/
 span[class|="foot"]{
 }
 
 div{
-  border: solid 1px green;}
+  border: solid 1px green;
+}
 
 h1 {
   font-size: 4rem;
@@ -49,7 +52,6 @@ header{
   margin-left: 24px;
 }
 
-
 nav{
   display: flex;
   flex-direction: row;
@@ -60,6 +62,39 @@ nav{
 
 nav span {
   padding-right: 16px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* media queries */
+@media only screen and (min-width: 471px){
+
+}
+
+@media only screen and (max-width: 470px){
+  header{
+    justify-content: center;
+  }
+
+  .title{
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .title span{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .mobile-menu {
+  display: inline-flex;
+  }
 }
 
 /* Jumbotron */
@@ -109,6 +144,43 @@ nav span {
 
 }
 
+/* media queries */
+
+@media only screen and (max-width: 470px){
+  .jumbotron{
+    flex-direction: column;
+  }
+
+  .leftjumbo{
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .rightjumbo {
+    width: 100%;
+    align-items: center;
+  }
+
+  .jumbohead {
+    width: 100%;
+    margin: 0px 0px;
+  }
+
+  .jumbohead h2{
+    padding: 32px 16px 16px 16px;
+    font-size: 2rem;
+  }
+
+  .jumbohead p {
+    padding: 16px 16px 12px 16px;
+  }
+
+  .startbutton {
+    margin: 12px 16px 32px 16px;
+    max-width: 90%;
+  }
+}
+
 /* main section */
 
 .main {
@@ -130,7 +202,7 @@ nav span {
 }
 
 .main .contain-img img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .mainhead{
@@ -173,6 +245,10 @@ nav span {
   justify-content: center;
 }
 
+.box .mobile {
+  display: none;
+}
+
 .box .contain-img img {
   width: 100%;
 }
@@ -180,6 +256,42 @@ nav span {
 .box p {
   padding-top: 16px;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 470px){
+  .main-left {
+    display: none;
+  }
+
+  .main-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 16px 64px 16px;
+    max-width: 470px;
+  }
+
+  .box .contain-img {
+    width: 90%;
+  }
+
+  .box .contain-img .desktop {
+    display: none;
+  }
+
+  .box .mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
 
 /* feature section: learning */
 .learning {
@@ -195,7 +307,7 @@ nav span {
 .feature-head h2 {
   margin: 32px 0;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -236,6 +348,49 @@ nav span {
 .course .content span {
   padding: 8px 0px;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 470px){
+  .feature-head {
+    background-color: white;
+  }
+
+  .feature-head h2 {
+    margin: 32px 0px 16px 0px;
+  }
+
+  .carousel {
+    margin: 0px;
+    background-color: white;
+  }
+
+  .courses-contain{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .course {
+    background-color: gainsboro;
+    width: 90%;
+    margin: 8px 0px;
+  }
+  .course .contain-img {
+    display: none;
+  }
+  .course .content span {
+    display: none;
+  }
+  .course .content p {
+    display: none;
+  }
+
+  .course .content h4 {
+    margin: 16px 24px;
+  }
+
+}
+
 
 /* Thesis exhibition section */
 
@@ -291,6 +446,27 @@ nav span {
   padding-bottom:8px;
 }
 
+/* media queries */
+
+@media only screen and (max-width: 470px){
+  .exhibits-side {
+  display: none;
+  }
+
+  .exhbits-side .content {
+  display: none;
+  }
+
+  .exhibits-main .content {
+  display: none;
+  }
+
+  .exhibits-main{
+  width: 100%;
+  }
+}
+
+
 /* footer */
 
 footer {
@@ -312,4 +488,16 @@ footer {
 
 .foot-right span{
   padding-left: 8px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 470px){
+  .foot-right {
+    display: none;
+  }
+
+  .foot-left {
+    margin-bottom: 16px;
+  }
 }
