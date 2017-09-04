@@ -74,12 +74,10 @@ nav span {
   font-weight: bold;
 }
 
-/* media queries */
-@media only screen and (min-width: 471px){
+/* media queries: Header */
 
-}
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 600px){
   header{
     justify-content: center;
   }
@@ -113,7 +111,7 @@ nav span {
 }
 
 .leftjumbo {
-  max-width: 60%;
+  width: 60%;
   margin: 32px 24px;
   height: auto;
 }
@@ -136,7 +134,7 @@ nav span {
   width: 70%;
   height: 50%;
   margin-left: 24px;
-  flex-shrink: 3;
+  /*flex-shrink: 3;*/
 }
 
 .jumbohead h2{
@@ -162,7 +160,7 @@ nav span {
 
 /* media queries */
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 1000px){
   .jumbotron{
     flex-direction: column;
   }
@@ -285,9 +283,9 @@ nav span {
   padding-top: 16px;
 }
 
-/* media queries */
+/* media queries Feature: main */
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 600px){
   .main-left {
     display: none;
   }
@@ -382,9 +380,9 @@ nav span {
   padding: 8px 0px;
 }
 
-/* media queries */
+/* media queries feature section: leaerning */
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 700px){
   .feature-head {
     background-color: white;
   }
