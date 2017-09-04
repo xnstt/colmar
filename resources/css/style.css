@@ -1,6 +1,6 @@
 /* Universal Styles*/
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -23,6 +23,7 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4 {
@@ -67,6 +68,10 @@ nav span {
 
 .mobile-menu {
   display: none;
+}
+
+#imprint {
+  font-weight: bold;
 }
 
 /* media queries */
@@ -133,9 +138,13 @@ nav span {
   margin-left: 24px;
 }
 
+.jumbohead p{
+  font-size: 1.4rem;
+}
+
 .startbutton {
   background-color: DimGrey;
-  padding: 8px 0px;
+  padding: 16px 0px;
   text-align: center;
   width: 100%;
 }
@@ -301,6 +310,11 @@ nav span {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  .box:nth-child(3n+3)
+  {
+    background-color: white;
   }
 
 }
