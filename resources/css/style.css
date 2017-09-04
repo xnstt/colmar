@@ -113,20 +113,20 @@ nav span {
 }
 
 .leftjumbo {
-  width: 60%;
+  max-width: 60%;
   margin: 32px 24px;
   height: auto;
 }
 
 .leftjumbo img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .rightjumbo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  max-width: 40%;
 }
 
 .jumbohead {
@@ -136,10 +136,15 @@ nav span {
   width: 70%;
   height: 50%;
   margin-left: 24px;
+  flex-shrink: 3;
+}
+
+.jumbohead h2{
 }
 
 .jumbohead p{
   font-size: 1.4rem;
+  /*flex-shrink: 1;*/
 }
 
 .startbutton {
@@ -147,6 +152,7 @@ nav span {
   padding: 16px 0px;
   text-align: center;
   width: 100%;
+  /*flex-shrink: 2;*/
 }
 
 .startbutton span{
